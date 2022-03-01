@@ -9,5 +9,6 @@ func RoutePerson(mux *http.ServeMux, dbHandler dbHandler) {
 
 	mux.HandleFunc("/people/create", hdler.create)
 	mux.HandleFunc("/people/get-all", hdler.getAll)
+	mux.HandleFunc("/people/update", hdler.update)
 
 }
